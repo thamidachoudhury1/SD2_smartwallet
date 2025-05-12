@@ -14,7 +14,7 @@ require('./config/passportConfig');
 const app = express();
 
 const corsOptions = {
-    origin: "https://sd2smartwallet.netlify.app",
+    origin: "https://smartwalletsd2.netlify.app",
     methods: "GET,POST,PATCH,DELETE",
     credentials: true
   };
