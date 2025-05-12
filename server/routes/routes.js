@@ -217,7 +217,7 @@ router.get('/auth/google/callback',
   (req, res) => { const { user, token } = req.user;
     console.log("Google OAuth successful for user ID:", user.userId);
     console.log("Google OAuth token:", token);
-    // Redirect back into your React app with both token + userId
+
     const redirectUrl = new URL(`${process.env.CLIENT_URL}/authform`);
     redirectUrl.searchParams.set('google_token', token);
     redirectUrl.searchParams.set('userId', user.userId);

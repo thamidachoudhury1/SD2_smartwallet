@@ -43,6 +43,10 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true,
     default: uuidv4
+  },
+
+  accessToken: {
+    type: String
   }
 
 }, {
